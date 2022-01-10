@@ -25,7 +25,9 @@
         </div>
 
         <div id="nav-menu-right" class="space-x-4 mr-16 hidden md:flex">
-          <button class="btn btn-account">MyAcount</button>
+          <button class="btn btn-account">
+            <router-link to="/login">Login</router-link>
+          </button>
         </div>
       </div>
 
@@ -56,14 +58,16 @@
                 ><router-link to="/houses">Houses</router-link></a
               >
               <a href="#" class="md:mx-4"
-                ><router-link to="/detail">Detail</router-link></a
+                ><router-link to="/addHouse">AddHouse</router-link></a
               >
             </div>
           </div>
         </div>
 
         <div id="nav-menu-right" class="flex-none space-x-4 lg:mr-8 sm:md-10">
-          <button @click="login" class="btn btn-login">Join now</button>
+          <button class="btn btn-login capitalize">
+            <router-link to="/register">Join as home owner</router-link>
+          </button>
         </div>
       </div>
       <!-- Bottom Navigation endes here -->
